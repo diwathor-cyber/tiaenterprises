@@ -1,308 +1,174 @@
 export const metadata = {
-  title:
-    "TIA Enterprises | Insurance, Loans, Engineering & Risk Advisory",
+  title: "Services | TIA Enterprises",
   description:
-    "TIA Enterprises provides insurance, financial, engineering and risk advisory solutions for businesses, professionals and families.",
+    "Explore insurance, financial, engineering and business advisory services offered by TIA Enterprises.",
 };
 
-const partners = [
-  {
-    name: "LIC India",
-    image: "/partners/partner-lic.png",
-  },
-  {
-    name: "ICICI Lombard",
-    image: "/partners/partner-icici-lombard.png",
-  },
-  {
-    name: "Niva Bupa",
-    image: "/partners/partner-niva-bupa.png",
-  },
-  {
-    name: "Digit Insurance",
-    image: "/partners/partner-digit.png",
-  },
-  {
-    name: "Aditya Birla Capital",
-    image: "/partners/partner-aditya-birla.png",
-  },
-];
+export default function ServicesPage() {
+  const services = [
+    {
+      title: "Keyman Insurance",
+      description:
+        "Financial protection for businesses against the loss of key individuals.",
+      link: "/services/keyman-insurance",
+    },
+    {
+      title: "MSME Insurance",
+      description:
+        "Business protection solutions for MSMEs, assets and operations.",
+      link: "/services/msme-insurance",
+    },
+    {
+      title: "Shop Insurance",
+      description:
+        "Coverage for retail stores against fire, theft and operational risks.",
+      link: "/services/shop-insurance",
+    },
+    {
+      title: "Factory Insurance",
+      description:
+        "Industrial risk protection for machinery, inventory and facilities.",
+      link: "/services/factory-insurance",
+    },
+    {
+      title: "Group Mediclaim",
+      description:
+        "Employee healthcare protection solutions for organizations and businesses.",
+      link: "/services/group-mediclaim",
+    },
+    {
+      title: "Surety Bonds",
+      description:
+        "Financial guarantee solutions for contractors and infrastructure projects.",
+      link: "/services/surety-bonds",
+    },
+    {
+      title: "Business Loans",
+      description:
+        "Funding solutions for MSMEs, professionals and growing enterprises.",
+      link: "/services/business-loans",
+    },
+    {
+      title: "Engineering Consultancy",
+      description:
+        "Practical project and engineering advisory solutions for businesses.",
+      link: "/services/engineering-consultancy",
+    },
+    {
+      title: "Claims Support",
+      description:
+        "Reliable assistance and guidance during insurance claim processes.",
+      link: "/services/claims-support",
+    },
+  ];
 
-export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
+      <section className="mx-auto max-w-7xl px-6 py-16">
 
-      {/* HERO */}
-      <section className="bg-gradient-to-br from-white via-blue-50 to-slate-100">
-        <div className="mx-auto max-w-7xl px-6 py-8">
-          <div className="grid items-center gap-6 md:grid-cols-2">
+        <div className="grid items-start gap-10 md:grid-cols-2">
 
-            <div className="text-left">
-              <h2 className="text-3xl font-black leading-tight text-slate-900 md:text-4xl">
-                Business Protection & Financial Solutions
+          <div>
+            <p className="text-sm font-semibold tracking-[0.2em] text-blue-700">
+              OUR SERVICES
+            </p>
+
+            <h1 className="mt-5 text-4xl font-bold leading-tight text-slate-900">
+              Protection Solutions For Modern Businesses
+            </h1>
+
+            <p className="mt-6 text-base leading-8 text-slate-600">
+              TIA Enterprises provides insurance, financial and
+              advisory solutions tailored for professionals,
+              businesses, MSMEs and industries.
+            </p>
+
+            <p className="mt-5 text-base leading-8 text-slate-600">
+              Our solutions are designed to help businesses,
+              institutions and professionals manage operational,
+              financial and risk-related challenges effectively.
+            </p>
+          </div>
+
+          <div className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-lg">
+            <p className="text-sm font-semibold tracking-[0.2em] text-blue-700">
+              INDUSTRIES WE SERVE
+            </p>
+
+            <h2 className="mt-4 text-3xl font-bold leading-tight text-slate-900">
+              Solutions Across Multiple Business Sectors
+            </h2>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                MSMEs
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                Shops & Retail Stores
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                Factories
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                Warehouses
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                Schools & Institutions
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                Contractors
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                Professionals
+              </div>
+
+              <div className="rounded-2xl bg-blue-50 px-5 py-4 font-medium text-blue-900">
+                Commercial Establishments
+              </div>
+
+            </div>
+
+            <p className="mt-8 text-base leading-8 text-slate-600">
+              TIA Enterprises provides practical protection,
+              advisory and financial solutions tailored for
+              diverse industries and growing businesses.
+            </p>
+          </div>
+
+        </div>
+
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+            >
+              <h2 className="text-2xl font-bold text-blue-900">
+                {service.title}
               </h2>
 
-              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-                Insurance, financial and engineering solutions for
-                businesses, professionals and families.
+              <p className="mt-4 text-sm leading-7 text-slate-600">
+                {service.description}
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a
-                  href="https://wa.me/919052300600"
-                  className="rounded-2xl bg-green-600 px-6 py-3 font-semibold text-white shadow transition hover:bg-green-700"
-                >
-                  Chat on WhatsApp
-                </a>
-
-                <button className="rounded-2xl border border-blue-700 px-6 py-3 font-semibold text-blue-700 transition hover:bg-blue-50">
-                  Request Callback
-                </button>
-              </div>
+              <a
+                href={service.link}
+                className="mt-5 inline-block rounded-2xl bg-blue-700 px-5 py-3 font-semibold text-white transition hover:bg-blue-800"
+              >
+                Learn More
+              </a>
             </div>
-
-            <div className="flex justify-center">
-              <div className="rounded-[24px] bg-gradient-to-br from-blue-200 to-blue-50 p-2 shadow-xl">
-                <img
-                  src="/founder/diwakar-hero.webp"
-                  alt="Diwakar Cherukuwada"
-                  className="w-full max-w-sm rounded-[20px]"
-                />
-              </div>
-            </div>
-
-          </div>
+          ))}
         </div>
+
       </section>
-
-      {/* POPULAR SERVICES */}
-      <section className="mx-auto max-w-7xl px-6 py-8">
-        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <div>
-              <p className="text-xs font-semibold tracking-[0.2em] text-blue-700">
-                POPULAR SERVICES
-              </p>
-
-              <h2 className="mt-2 text-2xl font-black text-slate-900">
-                Explore Our Core Solutions
-              </h2>
-            </div>
-
-            <a
-              href="/services"
-              className="rounded-2xl border border-blue-700 px-4 py-2 font-semibold text-blue-700 transition hover:bg-blue-50"
-            >
-              View All
-            </a>
-          </div>
-
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href="/services/keyman-insurance"
-              className="rounded-2xl bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
-            >
-              Keyman Insurance
-            </a>
-
-            <a
-              href="/services/msme-insurance"
-              className="rounded-2xl bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
-            >
-              MSME Insurance
-            </a>
-
-            <a
-              href="/services/shop-insurance"
-              className="rounded-2xl bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
-            >
-              Shop Insurance
-            </a>
-
-            <a
-              href="/services/factory-insurance"
-              className="rounded-2xl bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
-            >
-              Factory Insurance
-            </a>
-
-            <a
-              href="/services/group-mediclaim"
-              className="rounded-2xl bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
-            >
-              Group Mediclaim
-            </a>
-
-            <a
-              href="/services/surety-bonds"
-              className="rounded-2xl bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
-            >
-              Surety Bonds
-            </a>
-
-            <a
-              href="/services/business-loans"
-              className="rounded-2xl bg-blue-50 px-4 py-2 text-sm font-medium text-blue-900 transition hover:bg-blue-100"
-            >
-              Business Loans
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* STATS */}
-      <section className="mx-auto max-w-7xl px-6 py-8">
-        <div className="rounded-[36px] border border-slate-200 bg-white p-6 shadow-sm">
-          <div className="grid gap-6 text-center md:grid-cols-4">
-
-            <div>
-              <div className="text-4xl font-black text-blue-700">
-                500+
-              </div>
-
-              <p className="mt-2 text-sm text-slate-600">
-                Happy Clients
-              </p>
-            </div>
-
-            <div>
-              <div className="text-4xl font-black text-blue-700">
-                25+
-              </div>
-
-              <p className="mt-2 text-sm text-slate-600">
-                Business Sectors
-              </p>
-            </div>
-
-            <div>
-              <div className="text-4xl font-black text-blue-700">
-                50+
-              </div>
-
-              <p className="mt-2 text-sm text-slate-600">
-                Insurance Solutions
-              </p>
-            </div>
-
-            <div>
-              <div className="text-4xl font-black text-blue-700">
-                10+
-              </div>
-
-              <p className="mt-2 text-sm text-slate-600">
-                Years Experience
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* PARTNERS */}
-      <section className="mx-auto max-w-7xl px-6 py-8">
-        <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-
-          <h2 className="text-center text-2xl font-black text-slate-900">
-            Trusted Partners
-          </h2>
-
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-8">
-            {partners.map((partner) => (
-              <img
-                key={partner.name}
-                src={partner.image}
-                alt={partner.name}
-                className="h-12 w-auto object-contain transition hover:scale-105"
-              />
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* WHY TIA */}
-      <section className="mx-auto max-w-7xl px-6 py-8">
-        <div className="grid gap-6 md:grid-cols-4">
-
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-blue-900">
-              Business Protection
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-slate-600">
-              Comprehensive insurance and risk management solutions
-              for businesses and professionals.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-blue-900">
-              MSME Solutions
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-slate-600">
-              Specialized solutions tailored for MSMEs and growing
-              enterprises.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-blue-900">
-              Financial Guidance
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-slate-600">
-              Business funding and financial advisory support for
-              growth.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-xl font-bold text-blue-900">
-              Claims Support
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-slate-600">
-              Practical assistance during insurance claims and
-              emergencies.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-blue-900 py-14 text-white">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <h2 className="text-4xl font-black">
-            Need Expert Guidance?
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-blue-100">
-            Speak directly with TIA Enterprises for insurance,
-            engineering, finance and business advisory support.
-          </p>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              href="https://wa.me/919052300600"
-              className="rounded-2xl bg-green-500 px-7 py-3 font-semibold text-white shadow transition hover:bg-green-600"
-            >
-              WhatsApp Now
-            </a>
-
-            <a
-              href="tel:+919052300600"
-              className="rounded-2xl border border-white/30 px-7 py-3 font-semibold text-white transition hover:bg-white/10"
-            >
-              Call Now
-            </a>
-          </div>
-        </div>
-      </section>
-
     </main>
   );
 }

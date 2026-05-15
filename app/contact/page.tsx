@@ -7,31 +7,35 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-14">
+        
         <div className="text-center">
           <p className="text-sm font-semibold tracking-[0.2em] text-blue-700">
             CONTACT TIA ENTERPRISES
           </p>
 
-          <h1 className="mt-5 text-5xl font-black text-slate-900">
+          <h1 className="mt-4 text-4xl font-bold text-slate-900">
             Let’s Connect
           </h1>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-slate-600">
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-slate-600">
             Speak directly with TIA Enterprises for insurance,
             finance, engineering and business advisory solutions.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-10 md:grid-cols-2">
-          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-            <h2 className="text-3xl font-bold text-blue-900">
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+
+          {/* CONTACT INFO */}
+          <div className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-lg">
+            <h2 className="text-2xl font-bold text-blue-900">
               Contact Information
             </h2>
 
             <div className="mt-8 space-y-6">
+
               <div>
-                <p className="text-sm font-semibold tracking-wide text-slate-500">
+                <p className="text-xs font-semibold tracking-[0.2em] text-slate-500">
                   PHONE
                 </p>
 
@@ -41,7 +45,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <p className="text-sm font-semibold tracking-wide text-slate-500">
+                <p className="text-xs font-semibold tracking-[0.2em] text-slate-500">
                   EMAIL
                 </p>
 
@@ -51,11 +55,11 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <p className="text-sm font-semibold tracking-wide text-slate-500">
+                <p className="text-xs font-semibold tracking-[0.2em] text-slate-500">
                   ADDRESS
                 </p>
 
-                <p className="mt-2 text-lg leading-8 text-slate-900">
+                <p className="mt-2 text-base leading-8 text-slate-900">
                   HIG 104, Block 7, Phase 5,
                   <br />
                   KPHB Colony,
@@ -63,9 +67,10 @@ export default function ContactPage() {
                   Hyderabad, Telangana, India - 500085
                 </p>
               </div>
+
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="https://wa.me/919052300600"
                 className="rounded-2xl bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-700"
@@ -82,12 +87,17 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
-            <h2 className="text-3xl font-bold text-blue-900">
+          {/* ENQUIRY FORM */}
+          <div className="rounded-[28px] border border-slate-200 bg-white p-7 shadow-lg">
+            <h2 className="text-2xl font-bold text-blue-900">
               Send An Enquiry
             </h2>
 
-            <form className="mt-8 space-y-5">
+            <p className="mt-4 text-base leading-7 text-slate-600">
+              Share your requirements and we will get in touch with you.
+            </p>
+
+            <form className="mt-8 space-y-4">
               <input
                 type="text"
                 placeholder="Your Name"
@@ -101,7 +111,7 @@ export default function ContactPage() {
               />
 
               <textarea
-                rows={5}
+                rows={4}
                 placeholder="Tell us about your requirement"
                 className="w-full rounded-2xl border border-slate-300 px-5 py-4 outline-none focus:border-blue-700"
               ></textarea>
@@ -114,6 +124,7 @@ export default function ContactPage() {
               </button>
             </form>
           </div>
+
         </div>
       </section>
     </main>
