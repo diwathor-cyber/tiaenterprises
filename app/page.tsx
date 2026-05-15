@@ -1,3 +1,10 @@
+export const metadata = {
+  title:
+    "TIA Enterprises | Insurance, Loans, Engineering & Risk Advisory",
+  description:
+    "TIA Enterprises provides insurance, financial, engineering and risk advisory solutions for businesses, professionals and families.",
+};
+
 export default function Home() {
   const services = [
     "Keyman Insurance",
@@ -35,39 +42,22 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <div className="flex items-center gap-4">
-            <img
-              src="/logos/tia-main-logo.png"
-              alt="TIA Enterprises"
-              className="h-16 w-auto"
-            />
-
-            <div className="text-left">
-              <h1 className="text-3xl font-black tracking-wide text-blue-900">
-                TIA ENTERPRISES
-              </h1>
-
-              <p className="mt-1 text-xs font-medium tracking-[0.2em] text-slate-500">
-                INSURANCE | LOANS | ENGINEERING | RISK ADVISORY
-              </p>
-            </div>
-          </div>
-
-          <a
-            href="https://wa.me/919052300600"
-            className="rounded-2xl bg-blue-700 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-blue-800"
-          >
-            WhatsApp Us
-          </a>
-        </div>
-      </header>
-
       <section className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-slate-100">
         <div className="mx-auto max-w-7xl px-6 py-12">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="text-left">
+              <div className="mb-6">
+                <h1 className="text-4xl font-black tracking-wide text-blue-900 md:text-5xl">
+                  TIA ENTERPRISES
+                </h1>
+
+                <p className="mt-2 text-xs font-medium tracking-[0.2em] leading-6 text-slate-500">
+                  INSURANCE | LOANS | ENGINEERING
+                  <br />
+                  RISK ADVISORY
+                </p>
+              </div>
+
               <h2 className="text-3xl font-black leading-tight text-slate-900 md:text-5xl">
                 Business Protection & Financial Solutions
               </h2>
@@ -203,31 +193,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="bg-white py-14">
-        <div className="mx-auto max-w-7xl px-6 text-center text-slate-600">
-          <p className="text-xl font-bold text-slate-900">
-            TIA Enterprises (A Unit of TIA Agency)
-          </p>
-
-          <p className="mt-4">
-            GSTIN: 36ACTPC9446P1ZO
-          </p>
-
-          <p className="mt-2">
-            HIG 104, Block 7, Phase 5, KPHB Colony,
-            Hyderabad - 500085
-          </p>
-
-          <p className="mt-2">
-            support@tiaenterprises.com
-          </p>
-
-          <p className="mt-8 text-sm text-slate-500">
-            Insurance is the subject matter of solicitation.
-          </p>
-        </div>
-      </footer>
     </main>
   );
 }
