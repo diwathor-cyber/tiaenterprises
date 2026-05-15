@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Services | TIA Enterprises",
+  description:
+    "Explore insurance, financial, engineering and business advisory services offered by TIA Enterprises.",
+};
+
 export default function ServicesPage() {
   const services = [
     "Keyman Insurance",

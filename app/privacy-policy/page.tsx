@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Privacy Policy | TIA Enterprises",
+  description:
+    "Read the privacy policy of TIA Enterprises regarding data usage and customer information.",
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">

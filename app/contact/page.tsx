@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Contact | TIA Enterprises",
+  description:
+    "Contact TIA Enterprises for insurance, finance, engineering and business advisory solutions.",
+};
+
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">

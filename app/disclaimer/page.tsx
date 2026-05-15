@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Disclaimer | TIA Enterprises",
+  description:
+    "Read the disclaimer and important information regarding insurance and advisory services offered by TIA Enterprises.",
+};
+
 export default function DisclaimerPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">

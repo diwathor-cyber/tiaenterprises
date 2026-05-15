@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "About | TIA Enterprises",
+  description:
+    "Learn about TIA Enterprises and our insurance, financial, engineering and business advisory solutions.",
+};
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">

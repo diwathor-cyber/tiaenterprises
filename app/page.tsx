@@ -46,18 +46,6 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 py-12">
           <div className="grid items-center gap-10 md:grid-cols-2">
             <div className="text-left">
-              <div className="mb-6">
-                <h1 className="text-4xl font-black tracking-wide text-blue-900 md:text-5xl">
-                  TIA ENTERPRISES
-                </h1>
-
-                <p className="mt-2 text-xs font-medium tracking-[0.2em] leading-6 text-slate-500">
-                  INSURANCE | LOANS | ENGINEERING
-                  <br />
-                  RISK ADVISORY
-                </p>
-              </div>
-
               <h2 className="text-3xl font-black leading-tight text-slate-900 md:text-5xl">
                 Business Protection & Financial Solutions
               </h2>
