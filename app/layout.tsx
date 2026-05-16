@@ -112,7 +112,7 @@ export default function RootLayout({
               <div className="mt-4 space-y-3 text-sm leading-7 text-slate-600">
                 <p>+91 90523 00600</p>
 
-                <p>support@tiaenterprises.com</p>
+                <p>info@tiaenterprises.com</p>
 
                 <p>
                   HIG 104, Block 7, Phase 5,

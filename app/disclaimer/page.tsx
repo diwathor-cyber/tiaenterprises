@@ -80,7 +80,7 @@ export default function DisclaimerPage() {
               </p>
 
               <p className="mt-3">
-                support@tiaenterprises.com
+                info@tiaenterprises.com
               </p>
             </div>
           </div>

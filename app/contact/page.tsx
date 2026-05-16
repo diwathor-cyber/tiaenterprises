@@ -50,7 +50,7 @@ export default function ContactPage() {
                 </p>
 
                 <p className="mt-2 text-lg font-medium text-slate-900">
-                  support@tiaenterprises.com
+                  info@tiaenterprises.com
                 </p>
               </div>
 
